@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Login() {
   return (
@@ -23,6 +24,14 @@ function Login() {
               submit
             </button>
           </form>
+          <div className="flex gap-2 text-white">
+            <p>i have't alreay Account</p>
+            <Link to="/register">
+              <button className="border-b-2 hover:cursor-pointer">
+                register
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>

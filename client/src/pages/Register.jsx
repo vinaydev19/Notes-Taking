@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
     <>
       <div className="w-full flex justify-center items-center bg-[#172842] h-screen">
         <div className="flex flex-col items-center gap-5 pt-3 w-[30%] h-[50%] bg-[#2B24AE] rounded-lg">
-          <h1 className="font-bold text-white">Register</h1>
+          <h1 className="font-bold text-white">Create Your Account</h1>
           <form className="flex flex-col gap-5 items-center">
             <input
               type="text"
@@ -29,6 +30,12 @@ function Register() {
               submit
             </button>
           </form>
+          <div className="flex gap-2 text-white">
+            <p>i have alreay Account</p>
+            <Link to="/Login">
+              <button className="border-b-2 hover:cursor-pointer">Login</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
